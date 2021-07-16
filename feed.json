@@ -10,9 +10,14 @@
             "id": "https://blog.i286.com/article/3cfc127e.html",
             "url": "https://blog.i286.com/article/3cfc127e.html",
             "title": "Mac下使用宝塔面板[Docker容器篇]",
-            "date_published": "2021-07-16T06:09:55.636Z",
-            "content_html": "<h1 id=\"导语\"><a class=\"anchor\" href=\"#导语\">#</a> 导语</h1>\n<p>作为一个 PHP 开发者，一个好的开发环境必然对自身工作效率有很大的要求。以前在 win 的时候习惯用 phpstudy，一直都在用。小皮官方也不负众望，开发出了 mac 版的 phpstudy，但是不够成熟。我试过用虚拟机，但内存开销太大，不值得，后来得知 Docker 可以有类似于虚拟机的功能。</p>\n<h2 id=\"准备工作\"><a class=\"anchor\" href=\"#准备工作\">#</a> 准备工作</h2>\n<p>MAC 系统，Docker 最新版【官方下载地址:<span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9nZXQtc3RhcnRlZA==\"> 下载桌面版</span>】</p>\n<h2 id=\"过程\"><a class=\"anchor\" href=\"#过程\">#</a> 过程</h2>\n<p>安装好我们的 Docker 后，我们可以直接在<span class=\"exturl\" data-url=\"aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS8=\"> DockerHub</span> (一个类似 GitHub 的平台) 中搜索到我们需要的容器实例。</p>\n<h4 id=\"截图示例\"><a class=\"anchor\" href=\"#截图示例\">#</a> 截图示例</h4>\n<p><img data-src=\"https://image.i286.com/images/20210716/1300/iShot2021-07-16%2013.55.54.png\" alt=\"截图\" /></p>\n<p><img data-src=\"https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.00.09.png\" alt=\"截图\" /></p>\n<p>我们选择第一个，根据他的提示来安装就好了。</p>\n<h4 id=\"小提示\"><a class=\"anchor\" href=\"#小提示\">#</a> 小提示</h4>\n<p>这里注意的一点是，建议使用桥接模式运行宝塔镜像，除非你的 mac 是打算做服务器才用 Host。</p>\n<p>如果你用桥接模式，请务必一次性把所需要的端口都加上，比如 443，8888，3306 那些，不然后续有得你哭的。</p>\n<pre><code class=\"language-cmd\">docker run -tid --name baota -p 80:80 -p 443:443 -p 8888:8888 -p 888:888 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota\n</code></pre>\n<div class=\"note warning\">\n<p>这是我的安装命令</p>\n<pre><code class=\"language-cmd\">docker run -tid --name baota -p 80:80 -p 8888:8888 -p 888:888 -p 20:20 -p 21:21 -p 3306:3306 -p 6379:6379 -p 5555:5555 -p 6371:6371 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota\n</code></pre>\n<p>我把 80,8888,888,20,21,3306,6379,5555,6371 端口都开放了，你也可以自己再加</p>\n</div>\n<p>安装好后，效果图</p>\n<p><img data-src=\"https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.05.11.png\" alt=\"截图\" /></p>\n<p><img data-src=\"https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.06.16.png\" alt=\"截图\" /></p>\n<p><img data-src=\"https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.06.30.png\" alt=\"截图\" /></p>\n<p>之后你就可以像服务器一样，操作宝塔啦！</p>\n<div class=\"note danger\">\n<p>安装实例前请务必确保你所需要的端口没有被占用，检查端口占用方法</p>\n<pre><code class=\"language-cmd\">lsof -i:端口号\n</code></pre>\n</div>\n",
-            "tags": []
+            "date_published": "2021-07-16T05:16:00.000Z",
+            "content_html": "<h1 id=\"导语\"><a class=\"anchor\" href=\"#导语\">#</a> 导语</h1>\n<p>作为一个 PHP 开发者，一个好的开发环境必然对自身工作效率有很大的要求。以前在 win 的时候习惯用 phpstudy，一直都在用。小皮官方也不负众望，开发出了 mac 版的 phpstudy，但是不够成熟。我试过用虚拟机，但内存开销太大，不值得，后来得知 Docker 可以有类似于虚拟机的功能。</p>\n<h2 id=\"准备工作\"><a class=\"anchor\" href=\"#准备工作\">#</a> 准备工作</h2>\n<p>MAC 系统，Docker 最新版【官方下载地址:<span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9nZXQtc3RhcnRlZA==\"> 下载桌面版</span>】</p>\n<h2 id=\"过程\"><a class=\"anchor\" href=\"#过程\">#</a> 过程</h2>\n<p>安装好我们的 Docker 后，我们可以直接在<span class=\"exturl\" data-url=\"aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS8=\"> DockerHub</span> (一个类似 GitHub 的平台) 中搜索到我们需要的容器实例。</p>\n<h4 id=\"截图示例\"><a class=\"anchor\" href=\"#截图示例\">#</a> 截图示例</h4>\n<p><img data-src=\"https://image.i286.com/images/20210716/1300/iShot2021-07-16%2013.55.54.png\" alt=\"截图\" /></p>\n<p><img data-src=\"https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.00.09.png\" alt=\"截图\" /></p>\n<p>我们选择第一个，根据他的提示来安装就好了。</p>\n<h4 id=\"小提示\"><a class=\"anchor\" href=\"#小提示\">#</a> 小提示</h4>\n<p>这里注意的一点是，建议使用桥接模式运行宝塔镜像，除非你的 mac 是打算做服务器才用 Host。</p>\n<p>如果你用桥接模式，请务必一次性把所需要的端口都加上，比如 443，8888，3306 那些，不然后续有得你哭的。</p>\n<pre><code class=\"language-sh\">docker run -tid --name baota -p 80:80 -p 443:443 -p 8888:8888 -p 888:888 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota\n</code></pre>\n<div class=\"note warning\">\n<p>这是我的安装命令</p>\n<pre><code class=\"language-sh\">docker run -tid --name baota -p 80:80 -p 8888:8888 -p 888:888 -p 20:20 -p 21:21 -p 3306:3306 -p 6379:6379 -p 5555:5555 -p 6371:6371 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota\n</code></pre>\n<p>我把 80,8888,888,20,21,3306,6379,5555,6371 端口都开放了，你也可以自己再加</p>\n</div>\n<p>安装好后，效果图</p>\n<p><img data-src=\"https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.05.11.png\" alt=\"截图\" /></p>\n<p><img data-src=\"https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.06.16.png\" alt=\"截图\" /></p>\n<p><img data-src=\"https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.06.30.png\" alt=\"截图\" /></p>\n<p>之后你就可以像服务器一样，操作宝塔啦！</p>\n<div class=\"note danger\">\n<p>安装实例前请务必确保你所需要的端口没有被占用，检查端口占用方法</p>\n<pre><code class=\"language-sh\">lsof -i:端口号\n</code></pre>\n</div>\n",
+            "tags": [
+                "教程文档",
+                "Docker",
+                "Docker",
+                "Mac"
+            ]
         },
         {
             "id": "https://blog.i286.com/article/720fc6a2.html",
@@ -64,8 +69,8 @@
             "tags": [
                 "代码笔记",
                 "php",
-                "代码",
-                "支付宝"
+                "支付宝",
+                "代码"
             ]
         },
         {

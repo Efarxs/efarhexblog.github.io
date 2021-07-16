@@ -8,7 +8,7 @@
     <author>
       <name>云影</name>
     </author>
-    <updated>2021-07-16T06:09:55.636Z</updated>
+    <updated>2021-07-16T05:16:00.000Z</updated>
     <category term="云影，QQ8711973，云影博客，博客，云上的影子，Efar，Efar博客，影视分享，资源分享天地，技术窝点" />
     <category term="PHP原创，网络资源" />
     <category term="代码日记" />
@@ -29,11 +29,11 @@
 &lt;h4 id=&#34;小提示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小提示&#34;&gt;#&lt;/a&gt; 小提示&lt;/h4&gt;
 &lt;p&gt;这里注意的一点是，建议使用桥接模式运行宝塔镜像，除非你的 mac 是打算做服务器才用 Host。&lt;/p&gt;
 &lt;p&gt;如果你用桥接模式，请务必一次性把所需要的端口都加上，比如 443，8888，3306 那些，不然后续有得你哭的。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;docker run -tid --name baota -p 80:80 -p 443:443 -p 8888:8888 -p 888:888 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;docker run -tid --name baota -p 80:80 -p 443:443 -p 8888:8888 -p 888:888 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;note warning&#34;&gt;
 &lt;p&gt;这是我的安装命令&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;docker run -tid --name baota -p 80:80 -p 8888:8888 -p 888:888 -p 20:20 -p 21:21 -p 3306:3306 -p 6379:6379 -p 5555:5555 -p 6371:6371 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;docker run -tid --name baota -p 80:80 -p 8888:8888 -p 888:888 -p 20:20 -p 21:21 -p 3306:3306 -p 6379:6379 -p 5555:5555 -p 6371:6371 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;我把 80,8888,888,20,21,3306,6379,5555,6371 端口都开放了，你也可以自己再加&lt;/p&gt;
 &lt;/div&gt;
@@ -44,11 +44,15 @@
 &lt;p&gt;之后你就可以像服务器一样，操作宝塔啦！&lt;/p&gt;
 &lt;div class=&#34;note danger&#34;&gt;
 &lt;p&gt;安装实例前请务必确保你所需要的端口没有被占用，检查端口占用方法&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;lsof -i:端口号
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;lsof -i:端口号
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </content>
-        <updated>2021-07-16T06:09:55.636Z</updated>
+        <category term="教程文档" scheme="https://blog.i286.com/categories/tutorial-document/" />
+        <category term="Docker" scheme="https://blog.i286.com/categories/tutorial-document/Docker/" />
+        <category term="Docker" scheme="https://blog.i286.com/tags/Docker/" />
+        <category term="Mac" scheme="https://blog.i286.com/tags/Mac/" />
+        <updated>2021-07-16T05:16:00.000Z</updated>
     </entry>
     <entry>
         <id>https://blog.i286.com/article/720fc6a2.html</id>
@@ -440,8 +444,8 @@
 </content>
         <category term="代码笔记" scheme="https://blog.i286.com/categories/code-notes/" />
         <category term="php" scheme="https://blog.i286.com/tags/php/" />
-        <category term="代码" scheme="https://blog.i286.com/tags/%E4%BB%A3%E7%A0%81/" />
         <category term="支付宝" scheme="https://blog.i286.com/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/" />
+        <category term="代码" scheme="https://blog.i286.com/tags/%E4%BB%A3%E7%A0%81/" />
         <updated>2021-01-28T21:32:00.000Z</updated>
     </entry>
     <entry>
