@@ -10,11 +10,49 @@
         </author>
         <description>云影的鼠窝又称云影博客（blog.efar.top），搭建于2018年08月20日，仅用于分享资源以及发布一些言论，不定时更新一些影视、壁纸、软件、各类教程、音乐和源代码相关的文章。云影博客不敢承诺每篇文章都很精彩，也不敢承诺每篇文章都是原创，也有部分是从网上转载过来或者收集过来，云影仅可以保存每篇文章都很有阅读价值</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 01 Feb 2021 19:00:00 +0800</pubDate>
-        <lastBuildDate>Mon, 01 Feb 2021 19:00:00 +0800</lastBuildDate>
+        <pubDate>Fri, 16 Jul 2021 14:09:55 +0800</pubDate>
+        <lastBuildDate>Fri, 16 Jul 2021 14:09:55 +0800</lastBuildDate>
         <category term="云影，QQ8711973，云影博客，博客，云上的影子，Efar，Efar博客，影视分享，资源分享天地，技术窝点" />
         <category term="PHP原创，网络资源" />
         <category term="代码日记" />
+        <item>
+            <guid isPermalink="true">https://blog.i286.com/article/3cfc127e.html</guid>
+            <title>Mac下使用宝塔面板[Docker容器篇]</title>
+            <link>https://blog.i286.com/article/3cfc127e.html</link>
+            <pubDate>Fri, 16 Jul 2021 14:09:55 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;导语&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#导语&#34;&gt;#&lt;/a&gt; 导语&lt;/h1&gt;
+&lt;p&gt;作为一个 PHP 开发者，一个好的开发环境必然对自身工作效率有很大的要求。以前在 win 的时候习惯用 phpstudy，一直都在用。小皮官方也不负众望，开发出了 mac 版的 phpstudy，但是不够成熟。我试过用虚拟机，但内存开销太大，不值得，后来得知 Docker 可以有类似于虚拟机的功能。&lt;/p&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#准备工作&#34;&gt;#&lt;/a&gt; 准备工作&lt;/h2&gt;
+&lt;p&gt;MAC 系统，Docker 最新版【官方下载地址:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9nZXQtc3RhcnRlZA==&#34;&gt; 下载桌面版&lt;/span&gt;】&lt;/p&gt;
+&lt;h2 id=&#34;过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#过程&#34;&gt;#&lt;/a&gt; 过程&lt;/h2&gt;
+&lt;p&gt;安装好我们的 Docker 后，我们可以直接在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS8=&#34;&gt; DockerHub&lt;/span&gt; (一个类似 GitHub 的平台) 中搜索到我们需要的容器实例。&lt;/p&gt;
+&lt;h4 id=&#34;截图示例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#截图示例&#34;&gt;#&lt;/a&gt; 截图示例&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20210716/1300/iShot2021-07-16%2013.55.54.png&#34; alt=&#34;截图&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.00.09.png&#34; alt=&#34;截图&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;我们选择第一个，根据他的提示来安装就好了。&lt;/p&gt;
+&lt;h4 id=&#34;小提示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小提示&#34;&gt;#&lt;/a&gt; 小提示&lt;/h4&gt;
+&lt;p&gt;这里注意的一点是，建议使用桥接模式运行宝塔镜像，除非你的 mac 是打算做服务器才用 Host。&lt;/p&gt;
+&lt;p&gt;如果你用桥接模式，请务必一次性把所需要的端口都加上，比如 443，8888，3306 那些，不然后续有得你哭的。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;docker run -tid --name baota -p 80:80 -p 443:443 -p 8888:8888 -p 888:888 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;note warning&#34;&gt;
+&lt;p&gt;这是我的安装命令&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;docker run -tid --name baota -p 80:80 -p 8888:8888 -p 888:888 -p 20:20 -p 21:21 -p 3306:3306 -p 6379:6379 -p 5555:5555 -p 6371:6371 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我把 80,8888,888,20,21,3306,6379,5555,6371 端口都开放了，你也可以自己再加&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;安装好后，效果图&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.05.11.png&#34; alt=&#34;截图&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.06.16.png&#34; alt=&#34;截图&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.06.30.png&#34; alt=&#34;截图&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;之后你就可以像服务器一样，操作宝塔啦！&lt;/p&gt;
+&lt;div class=&#34;note danger&#34;&gt;
+&lt;p&gt;安装实例前请务必确保你所需要的端口没有被占用，检查端口占用方法&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;lsof -i:端口号
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://blog.i286.com/article/720fc6a2.html</guid>
             <title>利用反向代理或者CDN直接绑定域名到gitee pages</title>
