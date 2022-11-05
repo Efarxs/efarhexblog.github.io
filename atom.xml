@@ -116,9 +116,9 @@
 &lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20211115/15.png&#34; alt=&#34;步骤15&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;随便选一个即可，根据图示操作&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20211115/16.png&#34; alt=&#34;步骤16&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;::warning&lt;/p&gt;
+&lt;div class=&#34;note warning&#34;&gt;
 &lt;p&gt;务必复制好那串 32 位 token 哦&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
+&lt;/div&gt;
 &lt;h1 id=&#34;修改-platepy&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修改-platepy&#34;&gt;#&lt;/a&gt; 修改 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3BsYXRlLnB5&#34;&gt;plate.py&lt;/span&gt;&lt;/h1&gt;
 &lt;p&gt;修改打卡脚本，右键 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3BsYXRlLnB5&#34;&gt;plate.py&lt;/span&gt; 按图示选择&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20211115/17.png&#34; alt=&#34;步骤17&#34; /&gt;&lt;/p&gt;
@@ -580,9 +580,9 @@
 &lt;p&gt;&lt;ins class=&#34;danger&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d2EubGFuem91cy5jb20vaUh3Sk1sMDg4Y2o=&#34;&gt;源码&lt;/span&gt;&lt;/ins&gt;&lt;/p&gt;
 </content>
         <category term="代码笔记" scheme="https://blog.i286.com/categories/code-notes/" />
+        <category term="支付宝" scheme="https://blog.i286.com/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/" />
         <category term="php" scheme="https://blog.i286.com/tags/php/" />
         <category term="代码" scheme="https://blog.i286.com/tags/%E4%BB%A3%E7%A0%81/" />
-        <category term="支付宝" scheme="https://blog.i286.com/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/" />
         <updated>2021-01-28T21:32:00.000Z</updated>
     </entry>
     <entry>
