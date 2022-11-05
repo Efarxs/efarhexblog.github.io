@@ -36,6 +36,17 @@
 &lt;div class=&#34;note warning&#34;&gt;
 &lt;p&gt;只需要获取 token 就好了&lt;/p&gt;
 &lt;/div&gt;
+&lt;h2 id=&#34;下载了34版本的微信还是没法抓取小程序的数据包解决方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载了34版本的微信还是没法抓取小程序的数据包解决方法&#34;&gt;#&lt;/a&gt; 下载了 3.4 版本的微信还是没法抓取小程序的数据包解决方法&lt;/h2&gt;
+&lt;p&gt;因为我们知道，3.5 之后微信对小程序进行了重构，因此我们在使用高版本的微信的时候，在打开小程序时，会在微信某个目录生成一些文件，因为这些文件导致我们没法抓取数据&lt;/p&gt;
+&lt;h3 id=&#34;步骤1&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤1&#34;&gt;#&lt;/a&gt; 步骤 1&lt;/h3&gt;
+&lt;p&gt;首先打开电脑微信，并任意打开一个微信小程序页面，打开之后呢，启动任务管理器，找到小程序运行文件，并右键打开文件所在目录&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20221105/w1.png&#34; alt=&#34;任务管理器&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤2&#34;&gt;#&lt;/a&gt; 步骤 2&lt;/h3&gt;
+&lt;p&gt;打开小程序对应的目录文件，接着在上方的地址栏目录中找到 Plugins 目录的下级文件夹（每个小程序对应的文件夹目录可能也会不同，这里以 WMPFRuntime 为例）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20221105/w2.png&#34; alt=&#34;文件目录1&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤3&#34;&gt;#&lt;/a&gt; 步骤 3&lt;/h3&gt;
+&lt;p&gt;关闭微信，删除该目录下所有内容，再重新打开 3.4 版本的微信进行抓包&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20221105/w3.png&#34; alt=&#34;删除目录界面&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;ios系统提取token教程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ios系统提取token教程&#34;&gt;#&lt;/a&gt; ios 系统提取 token 教程&lt;/h1&gt;
 &lt;p&gt;IOS 相对来说是非常简单的，只需要去 Apple Store 下载&lt;span class=&#34;red&#34;&gt; Stream&lt;/span&gt; 这个软件，按照下方视频教程，进行操作。&lt;/p&gt;
 &lt;h2 id=&#34;视频教程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#视频教程&#34;&gt;#&lt;/a&gt; 视频教程&lt;/h2&gt;
