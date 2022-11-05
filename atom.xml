@@ -8,10 +8,59 @@
     <author>
       <name>云影</name>
     </author>
-    <updated>2021-11-14T12:00:07.000Z</updated>
+    <updated>2022-11-05T06:16:28.000Z</updated>
     <category term="云影，QQ8711973，云影博客，博客，云上的影子，Efar，Efar博客，影视分享，资源分享天地，技术窝点" />
     <category term="PHP原创，网络资源" />
     <category term="代码日记" />
+    <entry>
+        <id>https://blog.i286.com/article/34d87876.html</id>
+        <title>光盘打卡挂机任务网站使用教程</title>
+        <link rel="alternate" href="https://blog.i286.com/article/34d87876.html"/>
+        <content type="html">&lt;h1 id=&#34;导语&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#导语&#34;&gt;#&lt;/a&gt; 导语&lt;/h1&gt;
+&lt;p&gt;一年一度的光盘打卡活动又来了，在去年的这段时间，我已经发布过一次有关 “光盘打卡” 小程序的脚本使用教程，那时候做的比较简单，又要配置 python 环境，又要打开电脑挂脚本啥的，非常的不方便，但是最近提前做了准备，为这次的光盘打卡活动写了一个网页挂机程序，可以让你随时随地查询自己的光盘打卡任务情况，无需自己挂机，只需要按照以下的教程，把对应的信息填写到网站上去就行了。&lt;/p&gt;
+&lt;h1 id=&#34;准备工作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#准备工作&#34;&gt;#&lt;/a&gt; 准备工作&lt;/h1&gt;
+&lt;p&gt;本次教程主要为 token 提取教程，分为 windows 系统 (电脑端) 和 IOS 系统 (手机端)，为什么要用 windows 系统和 IOS 系统作为电脑端和手机端的代表呢？&lt;/p&gt;
+&lt;div class=&#34;note warning&#34;&gt;
+&lt;p&gt;目前市面上的安卓手机，基本上都是安卓 10 以上，导致没法 root，对于 http/https 抓包都不友好，结合 windows 系统又大众化，因此使用 windows 系统抓包是最好的选择，当然了，最好的最方便的还是 ios 系统。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;windows系统提取token教程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#windows系统提取token教程&#34;&gt;#&lt;/a&gt; windows 系统提取 Token 教程&lt;/h1&gt;
+&lt;div class=&#34;note danger&#34;&gt;
+&lt;p&gt;因为现在 windows 系统的微信客户端版本对小程序架构进行了重构，导致了没法直接利用抓包软件进行抓包，因此我们需要使用低版本的微信客户端，在这里我的建议是使用 3.5 以下的版本微信客户端&lt;/p&gt;
+&lt;/div&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;微信3.4下载地址&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;链接: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMWdYZTZCTFRJSEhsQTh5bS16c0dOS0E=&#34;&gt;https://pan.baidu.com/s/1gXe6BLTIHHlA8ym-zsGNKA&lt;/span&gt;  密码: 4f31&lt;br /&gt;
+-- 来自百度网盘超级会员 V6 的分享&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;p&gt;利用 fiddler 进行抓包&lt;/p&gt;
+&lt;p&gt;参考博文：&lt;a href=&#34;https://blog.i286.com/article/a8ee8d33.html&#34;&gt;https://blog.i286.com/article/a8ee8d33.html&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;note warning&#34;&gt;
+&lt;p&gt;只需要获取 token 就好了&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;ios系统提取token教程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ios系统提取token教程&#34;&gt;#&lt;/a&gt; ios 系统提取 token 教程&lt;/h1&gt;
+&lt;p&gt;IOS 相对来说是非常简单的，只需要去 Apple Store 下载&lt;span class=&#34;red&#34;&gt; Stream&lt;/span&gt; 这个软件，按照下方视频教程，进行操作。&lt;/p&gt;
+&lt;h2 id=&#34;视频教程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#视频教程&#34;&gt;#&lt;/a&gt; 视频教程&lt;/h2&gt;
+&lt;p&gt;&lt;div class=&#34;media-container&#34;&gt;&lt;div class=&#34;player&#34; data-type=&#34;video&#34; data-src=&#39;[{&#34;name&#34;:&#34;教程&#34;,&#34;url&#34;:&#34;https://image.i286.com/videos/1667632335920565.mp4&#34;}]&#39;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h1 id=&#34;将token提交到挂机平台&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#将token提交到挂机平台&#34;&gt;#&lt;/a&gt; 将 token 提交到挂机平台&lt;/h1&gt;
+&lt;p&gt;网址：&lt;span class=&#34;label red&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2NwLmkyODYuY29t&#34;&gt;http://cp.i286.com&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://image.i286.com/images/20221105/1.png&#34; alt=&#34;网站界面&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;进入网站之后&lt;br /&gt;
+&lt;mark&gt;第一步&lt;/mark&gt;就是要点击 &amp;quot;添加 Token&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20221105/2.png&#34; alt=&#34;添加token界面&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;第二步&lt;/mark&gt;填写信息，&lt;ins class=&#34;dot&#34;&gt;查询账号&lt;/ins&gt; 相当于一个查询密码，自定义的，可以自由设置，必须要填写，&lt;ins class=&#34;dot&#34;&gt;必须要记住&lt;/ins&gt;，方便后续查询日志&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20221105/3.png&#34; alt=&#34;添加token，填写信息&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;填写完信息后，&lt;span class=&#34;red&#34;&gt;再&lt;/span&gt;点一次 &amp;quot;添加 token&amp;quot;，随后会提示添加成功或添加失败（有失败原因）&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;第三步&lt;/mark&gt;查询自己的信息&lt;/p&gt;
+&lt;p&gt;点击 “查询”，跳转到首页（查询页）&lt;/p&gt;
+&lt;p&gt;输入你刚刚设定的查询账号，再点一次 “查询” [这一行的步骤可能可以省略]&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://image.i286.com/images/20221105/4.png&#34; alt=&#34;查询结果&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在这里，你可以查看任务执行情况，运行日志，实时能量日志（官方日志），用户实时信息（可以查看当前余额和能量）&lt;/p&gt;
+&lt;p&gt;&lt;ins class=&#34;dot&#34;&gt;祝你使用愉快！&lt;/ins&gt;&lt;/p&gt;
+</content>
+        <category term="教程文档" scheme="https://blog.i286.com/categories/tutorial-document/" />
+        <category term="挂机" scheme="https://blog.i286.com/tags/%E6%8C%82%E6%9C%BA/" />
+        <category term="光盘打卡" scheme="https://blog.i286.com/tags/%E5%85%89%E7%9B%98%E6%89%93%E5%8D%A1/" />
+        <updated>2022-11-05T06:16:28.000Z</updated>
+    </entry>
     <entry>
         <id>https://blog.i286.com/article/a8ee8d33.html</id>
         <title>光盘打卡小程序自动打卡脚本 python</title>
@@ -521,8 +570,8 @@
 </content>
         <category term="代码笔记" scheme="https://blog.i286.com/categories/code-notes/" />
         <category term="php" scheme="https://blog.i286.com/tags/php/" />
-        <category term="代码" scheme="https://blog.i286.com/tags/%E4%BB%A3%E7%A0%81/" />
         <category term="支付宝" scheme="https://blog.i286.com/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/" />
+        <category term="代码" scheme="https://blog.i286.com/tags/%E4%BB%A3%E7%A0%81/" />
         <updated>2021-01-28T21:32:00.000Z</updated>
     </entry>
     <entry>
